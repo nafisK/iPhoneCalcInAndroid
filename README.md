@@ -1,2 +1,2 @@
 "# iPhone Calculator In Android" 
-<imc src="walkthrough.gif" />
+<img src="walkthrough.gif" />
