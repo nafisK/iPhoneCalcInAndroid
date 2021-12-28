@@ -68,6 +68,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onEqual(view: View) {
+        if (tvInput?.equals("") == true)
+            tvInput?.setText("")
         if (lastNumeric) {
             var tvValue = tvInput?.text.toString()
             var prefix = ""
@@ -76,6 +78,8 @@ class MainActivity : AppCompatActivity() {
                     prefix = "-"
                     tvValue = tvValue.substring(1)
                 }
+
+
                 if (tvValue.contains("-")) {
                     val splitValye = tvValue.split("-")
                     var one = splitValye[0]
@@ -84,14 +88,50 @@ class MainActivity : AppCompatActivity() {
                     if (prefix.isNotEmpty()) {
                         one = prefix + one
                     }
-                    tvInput?.text = (one.toDouble() - two.toDouble()).toString()
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() - two.toDouble()).toString())
+                } else if (tvValue.contains("+")) {
+                    val splitValye = tvValue.split("+")
+                    var one = splitValye[0]
+                    var two = splitValye[1]
 
+                    if (prefix.isNotEmpty()) {
+                        one = prefix + one
+                    }
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() + two.toDouble()).toString())
+                } else if (tvValue.contains("÷")) {
+                    val splitValye = tvValue.split("÷")
+                    var one = splitValye[0]
+                    var two = splitValye[1]
+
+                    if (prefix.isNotEmpty()) {
+                        one = prefix + one
+                    }
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() / two.toDouble()).toString())
+                } else {
+                    val splitValye = tvValue.split("×")
+                    var one = splitValye[0]
+                    var two = splitValye[1]
+
+                    if (prefix.isNotEmpty()) {
+                        one = prefix + one
+                    }
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() * two.toDouble()).toString())
                 }
 
             } catch (e: ArithmeticException) {
                 e.printStackTrace()
             }
         }
+
+    }
+
+    private fun removeZeroAfterDot(result: String): String {
+        var value = result
+        if (result.contains(".0")) {
+            value = result.substring(0, result.length - 2)
+
+        }
+        return value
     }
 
 
