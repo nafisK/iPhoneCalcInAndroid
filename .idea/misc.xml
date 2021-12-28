@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/btn_yellow.xml" value="0.5953846153846154" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/ripple_grey.xml" value="0.5953846153846154" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/ripple_yellow.xml" value="0.5953846153846154" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/rounded_button.xml" value="0.5" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/rounded_button_grey.xml" value="0.6025641025641025" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/rounded_button_light_ggrey.xml" value="0.6025641025641025" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/drawable/rounded_button_yellow.xml" value="0.6025641025641025" />
         <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/nafis/AndroidStudioProjects/UIUX_Calculator/app/src/main/res/layout/rounded_button.xml" value="0.5958333333333333" />
       </map>
     </option>
   </component>

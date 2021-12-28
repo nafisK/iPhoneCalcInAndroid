@@ -5,7 +5,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="color_1">#F8F9FA</color>
@@ -15,9 +15,10 @@
     <color name="color_5">#ADB5BD</color>
     <color name="color_6">#6C757D</color>
     <color name="color_7">#495057</color>
-    <color name="color_8">#343A40</color>
+    <color name="color_8">#313131</color>
     <color name="color_9">#212529</color>
-    <color name="button_operator">#fca311</color>
+    <color name="button_operator">#f69906</color>
+    <color name="button_operator_dark">#ac7d0c</color>
 
 
 
